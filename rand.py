@@ -22,7 +22,7 @@ async def makerandom(idx: int, threshold: int = 6) -> int:
 
 
 async def main():
-    res = await asyncio.gather(*(makerandom(i, 10 -i - 1) for i in range(3)))
+    res = await asyncio.gather(*(makerandom(i, 10 - i - 1) for i in range(3)))
     return res
 
 
